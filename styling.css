@@ -1,0 +1,30 @@
+
+table {
+    
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid black;
+  }
+  
+  thead th:nth-child(1) {
+    width: 30%;
+  }
+  
+  thead th:nth-child(2) {
+    width: 20%;
+  }
+  
+  thead th:nth-child(3) {
+    width: 15%;
+  }
+  
+  thead th:nth-child(4) {
+    width: 35%;
+  }
+  
+   th, td {
+    padding: 20px;
+    border-right: 2px solid #060606;
+    border-bottom: 2px solid #060606;
+    border-top: 2px solid #060606;
+  }
