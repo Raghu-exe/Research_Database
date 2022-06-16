@@ -23,13 +23,13 @@
 <?php 
 
 
-    $search = $_POST['search'];
+    $search = $_POST["search"];
     
 
 
     $host    = "localhost";
     $user    = "root";
-    $pass    = "raghu";
+    $pass    = "raghunandan";
     $db_name = "icd";
     
     
@@ -43,9 +43,9 @@
 
     $selection = $_POST['checkbox'];
 
-    if ( $selection == "gene" ) {
+    if ( $selection == "Gene" ) {
         
-        $sql = "SELECT * FROM icd_10 WHERE gene LIKE '%$search%'";
+        $sql = "SELECT * FROM icd_10 WHERE Gene LIKE '%$search%'";
 
     } else if ( $selection == "disease") {
 
@@ -58,7 +58,7 @@
 
     $all_property = array();  //declare an array for saving property
 
-
+    
 
     //showing property
     echo '<table class="data-table">

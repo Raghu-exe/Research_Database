@@ -34,6 +34,7 @@
     </div>
         
     <?php 
+    error_reporting(E_ERROR | E_PARSE);
     require('./backend.php'); 
 
     ?>
