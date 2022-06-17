@@ -55,6 +55,16 @@
      
     $result = mysqli_query($connection, $sql);
 
+    $num_result = mysqli_num_rows($result);
+
+                if ($num_result > 0){
+                
+                echo '<h3><div class = "right"><b><u> '.$num_result.'</u></b> results have been found and returned! </div></h3>';
+            } else {
+
+                echo'<div class = "right">No such records exist! </div>';
+
+            }
 
     $all_property = array();  //declare an array for saving property
 
